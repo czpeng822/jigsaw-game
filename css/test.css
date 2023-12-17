@@ -1,0 +1,8 @@
+body {background-color: lightblue;}
+h1   {color: blue;
+	   text-align: center;   /* 水平居中 */
+      }
+img {
+    display: block; /* 清除默认行内元素间的空隙 */ 
+    border: 3px solid black; /* 加边框 */
+}
