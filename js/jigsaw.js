@@ -1,5 +1,3 @@
-alert("welcome to play the game!")
-
 document.addEventListener("DOMContentLoaded", function() {
     var images = document.querySelectorAll('.image, .img1, .img2');
 
