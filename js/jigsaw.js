@@ -1,3 +1,5 @@
+alert("welcome to play the game!")
+
 document.addEventListener("DOMContentLoaded", function() {
     var images = document.querySelectorAll('.image, .img1, .img2');
 
@@ -7,9 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
             console.log('Image hidden');
         });
     });
-});
 
-document.addEventListener("DOMContentLoaded", function() {
     function reset() {
         var image = document.querySelector('.image');
         var img1 = document.querySelector('.img1');
@@ -20,5 +20,6 @@ document.addEventListener("DOMContentLoaded", function() {
         img2.style.display = 'flex';
         console.log('reset success');
     }
-    window.reset = reset;
-});
+let btn=document.getElementById('reset')
+btn.onclick=reset;
+})
