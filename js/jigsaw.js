@@ -53,7 +53,7 @@ function drop(ev)
     ev.target.height = document.getElementById(data).height;
     document.getElementById(data).style.display='none';
     setTimeout(function() {
-    check();}, 500;
+    check();}, 500);
 }
 
   function check() {
