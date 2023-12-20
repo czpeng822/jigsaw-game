@@ -21,3 +21,18 @@ h1   {color: blue;
 		border: 1px solid black;
 		}
 }
+
+
+.image-jigsaw {
+		display: flex;
+		width: 800px; /* 设定容器宽度 */
+		height: 800px; /* 设定容器高度 */
+		.container1{
+			display: flex;
+			border: 1px solid black;
+		}
+		.container2{
+		display: flex;
+		border: 1px solid black;
+		}
+}
