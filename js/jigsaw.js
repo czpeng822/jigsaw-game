@@ -7,13 +7,6 @@ var images = document.querySelectorAll('.image, .img1, .img2');
         });
     });
 
-/*for (var i=0;i<3;i++){
-    images[i].addEventListener('click', function(event) {
-        event.target.style.display = 'none';
-        console.log('Image hidden');
-    });
-}*/
-
 function reset() {
     var image = document.querySelector('.image');
     var img1 = document.querySelector('.img1');
