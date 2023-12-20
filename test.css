@@ -1,0 +1,38 @@
+body {background-color: lightblue;}
+h1   {color: blue;
+	   text-align: center;   /* 水平居中 */
+      }
+
+.image {
+		display: block;
+		border: 3px solid black;
+}
+
+.image-container {
+		display: flex;
+		width: 800px; /* 设定容器宽度 */
+		height: 800px; /* 设定容器高度 */
+		.img1{
+			display: flex;
+			border: 1px solid black;
+		}
+		.img2{
+		display: flex;
+		border: 1px solid black;
+		}
+}
+
+
+.image-jigsaw {
+		display: flex;
+		width: 800px; /* 设定容器宽度 */
+		height: 800px; /* 设定容器高度 */
+		.container1{
+			display: flex;
+			border: 1px solid black;
+		}
+		.container2{
+		display: flex;
+		border: 1px solid black;
+		}
+}

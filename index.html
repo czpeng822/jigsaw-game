@@ -2,21 +2,29 @@
 <html>
 <head>
       <link rel="stylesheet" href="css/test.css">
-      <script src="js/jigsaw.js"></script>
 </head>
 <body>
       <h1>Jigsaw Game</h1>
+      <p>original diagram</p>
       <img src="image.jpeg" class="image" alt="image" width="800" height="800">
-
+      <p>jigsaw diagram</p>
       <div class="image-container">
-          <img src="image1.jpeg" class="img1" alt="image1" width="400" height="800">
-          <img src="image2.jpeg" class="img2" alt="image2" width="400" height="800">
+          <img id="jigsaw1" src="image1.jpeg" class="img1" alt="image1" width="400" height="800" draggable="true" ondragstart="drag(event)">
+          <img id="jigsaw2" src="image2.jpeg" class="img2" alt="image2" width="400" height="800" draggable="true" ondragstart="drag(event)">
       </div>
+
+      <p>jigsaw container</p>
+     <div class="image-jigsaw">
+          <img class="container1" alt="image1" width="400" height="800" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img class="container2" alt="image2" width="400" height="800" ondrop="drop(event)" ondragover="allowDrop(event)">
+     </div>
+
 
       <audio controls autoplay loop>
       <source src="music.mp3" type="audio/mpeg">
       </audio>
       <button id="reset" >reset</button>
+      <script src="js/jigsaw.js"></script>
 
 </body>
 </html>
