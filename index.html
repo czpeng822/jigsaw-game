@@ -5,8 +5,11 @@
 </head>
 <body>
       <h1>Jigsaw Game</h1>
+      <p>Timer: <span id="timer">0</span>S</p>
       <p>original diagram</p>
-      <img src="image.jpeg" class="image" alt="image" width="800" height="800">
+      <button id="hint" >hint</button>
+
+      <img id="hint" src="image.jpeg" class="image" alt="image" width="800" height="800">
       <p>jigsaw diagram</p>
       <div class="image-container">
           <img id="jigsaw1" src="image1.jpeg" class="img1" alt="image1" width="400" height="800" draggable="true" ondragstart="drag(event)">
