@@ -8,31 +8,42 @@ h1   {color: blue;
 		border: 3px solid black;
 }
 
+
+.game {
+    display: flex;
+}
+
+.jigsaw-diagram,
+.jigsaw-container {
+    display: block;
+		margin-left: auto;
+    margin-right: auto;
+}
+
+
 .image-container {
-		display: flex;
-		width: 800px; /* 设定容器宽度 */
-		height: 800px; /* 设定容器高度 */
-		.img1{
-			display: flex;
+		display: grid;
+		grid-template-columns:200px 200px 200px 200px;
+		width: 800px;
+		height: 800px;
+		.img1, .img2, .img3, .img4,
+		.img5, .img6, .img7, .img8,
+		.img9, .img10, .img11, .img12,
+		.img13, .img14, .img15, .img16{
 			border: 1px solid black;
-		}
-		.img2{
-		display: flex;
-		border: 1px solid black;
 		}
 }
 
 
 .image-jigsaw {
-		display: flex;
-		width: 800px; /* 设定容器宽度 */
-		height: 800px; /* 设定容器高度 */
-		.container1{
-			display: flex;
+		display: grid;
+		grid-template-columns:200px 200px 200px 200px;
+		width: 800px;
+		height: 800px;
+		.container1, .container2, .container3, .container4,
+		.container5, .container6, .container7, .container8,
+		.container9, .container10, .container11, .container12,
+		.container13, .container14, .container15, .container16{
 			border: 1px solid black;
-		}
-		.container2{
-		display: flex;
-		border: 1px solid black;
 		}
 }
