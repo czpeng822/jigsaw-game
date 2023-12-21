@@ -68,6 +68,10 @@ function drop(ev)
 {
     ev.preventDefault();
     var data=ev.dataTransfer.getData("Image");
+    if(document.getElementById(data).src.includes("none.jpeg")){
+      return;
+    }
+    else if(ev.target.src.includes("none.jpeg")){
     ev.target.src = document.getElementById(data).src;
     ev.target.alt = document.getElementById(data).alt;
     ev.target.width = document.getElementById(data).width;
@@ -75,7 +79,7 @@ function drop(ev)
     document.getElementById(data).src="none.jpeg";
     setTimeout(function() {
     check();}, 500);
-}
+}}
 
 //check the game is over
   function check() {
