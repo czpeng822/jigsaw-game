@@ -26,29 +26,26 @@ hint_btn.onclick=hint;
 
 //randam the diagram
 function reset_image_container(){
-  diagram_list=["image1.jpeg","image2.jpeg"];
-  var img1 = document.querySelector('.img1');
-  var img2 = document.querySelector('.img2');
-  var j=Math.floor(Math.random()*diagram_list.length)
-  img1.src=diagram_list[j];
+  diagram_list=["image1.jpeg","image2.jpeg","image3.jpeg","image4.jpeg","image5.jpeg","image6.jpeg","image7.jpeg","image8.jpeg","image9.jpeg","image10.jpeg","image11.jpeg","image12.jpeg","image13.jpeg","image14.jpeg","image15.jpeg","image16.jpeg"];
+  var imgall = document.querySelectorAll('.image-container img');
+  for(var i=0;i<16;i++){
+  var j=Math.floor(Math.random()*diagram_list.length);
+  imgall[i].src=diagram_list[j];
   diagram_list.splice(j,1);
-  img2.src=diagram_list[0];
-}
+}};
+
 reset_image_container();
 //define reset
 function reset() {
-    var image = document.querySelector('.image');
-    var img1 = document.querySelector('.img1');
-    var img2 = document.querySelector('.img2');
-    var container1 = document.querySelector('.container1');
-    var container2 = document.querySelector('.container2');
-
-        reset_image_container();
-        image.style.display = 'none';
-        img1.style.display = 'flex';
-        img2.style.display = 'flex';
-        container1.src="";
-        container2.src="";
+    var containerall = document.querySelectorAll('.image-container img');
+    var jigsawall = document.querySelectorAll('.image-jigsaw img');
+    containerall.forEach(function(container){
+      container.style.display = 'grid';
+    });
+    jigsawall.forEach(function(jigsaw){
+      jigsaw.src = 'none.jpeg';
+    });
+    reset_image_container();
         num=0;
         console.log('reset success');
     }
@@ -81,13 +78,28 @@ function drop(ev)
 
 //check the game is over
   function check() {
-      var container1 = document.querySelector('.container1');
-      var container2 = document.querySelector('.container2');
+    var jigsawall = document.querySelectorAll('.image-jigsaw img');
+    var completetag = true;
+    jigsawall.forEach(function (jigsaw) {
+        if (jigsaw.src.includes('none.jpeg')) {
+            completetag = false;
+        }
+    });
 
-      if (container1 && container2) {
-          if (container1.src.includes("image1.jpeg")&&container2.src.includes("image2.jpeg")) {
-              alert("congratulation! You win! You have spent "+num+" seconds for it.");
-              reset();
-          }
-      }
-  }
+    if (completetag) {
+        var machtag = true;
+        jigsawall.forEach(function (jigsaw) {
+            if (!jigsaw.src.includes(jigsaw.id)) {
+                console.log(jigsaw.src+"---"+jigsaw.id);
+                machtag = false;
+            }
+        });
+
+        if (machtag) {
+            alert("Congratulations! You win! You have spent " + num + " seconds for it.");
+            reset();
+        }
+    }
+    console.log("completetag:"+completetag);
+    console.log("machtag:"+machtag);
+}
