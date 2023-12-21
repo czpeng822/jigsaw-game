@@ -61,6 +61,7 @@ function allowDrop(ev)
 function drag(ev)
 {
     ev.dataTransfer.setData("Image",ev.target.id);
+
 }
 
 function drop(ev)
@@ -71,7 +72,7 @@ function drop(ev)
     ev.target.alt = document.getElementById(data).alt;
     ev.target.width = document.getElementById(data).width;
     ev.target.height = document.getElementById(data).height;
-    document.getElementById(data).style.display='none';
+    document.getElementById(data).src="none.jpeg";
     setTimeout(function() {
     check();}, 500);
 }
