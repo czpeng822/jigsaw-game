@@ -1,7 +1,13 @@
 //difeine Timer
 var num=0;
 var timecount=setInterval(function(){
-  document.getElementById('timer').innerText=num++},1000);
+  document.getElementById('timer').innerText=num++;
+    //game over
+  if(num==120){
+      alert("Times up. Game over!");
+      reset();
+}},1000);
+
 /*
 var images = document.querySelectorAll('.image, .img1, .img2');
 
@@ -12,6 +18,8 @@ var images = document.querySelectorAll('.image, .img1, .img2');
         });
     });
 */
+
+
 
 //define hint
 function hint(){
@@ -28,10 +36,13 @@ hint_btn.onclick=hint;
 function reset_image_container(){
   diagram_list=["image1.jpeg","image2.jpeg","image3.jpeg","image4.jpeg","image5.jpeg","image6.jpeg","image7.jpeg","image8.jpeg","image9.jpeg","image10.jpeg","image11.jpeg","image12.jpeg","image13.jpeg","image14.jpeg","image15.jpeg","image16.jpeg"];
   var imgall = document.querySelectorAll('.image-container img');
+  var diagram= document.querySelector('.image');
+  var chooseno=Math.ceil(Math.random()*10);
   for(var i=0;i<16;i++){
   var j=Math.floor(Math.random()*diagram_list.length);
-  imgall[i].src=diagram_list[j];
+  imgall[i].src="images/"+chooseno+"/"+diagram_list[j];
   diagram_list.splice(j,1);
+  diagram.src="images/"+chooseno+"/"+"image.jpeg";
 }};
 
 reset_image_container();
