@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <link rel="stylesheet" href="css/test.css">
+</head>
+<body>
+      <h1>Jigsaw Game</h1>
+      <p>Timer: <span id="timer">0</span>S</p>
+      <p>original diagram</p>
+      <button id="hint" class="hint" >hint</button>
+
+      <img id="original" src="images/1/image.jpeg" class="image" alt="image" width="800" height="800">
+      <p> </p>
+
+<div class="game">
+      <p class="jigsaw-diagram">jigsaw:</p>
+      <div class="image-container">
+          <img id="jigsaw1" src="images/1/image1.jpeg" class="img1" alt="image1" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw2" src="images/1/image2.jpeg" class="img2" alt="image2" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw3" src="images/1/image3.jpeg" class="img3" alt="image3" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw4" src="images/1/image4.jpeg" class="img4" alt="image4" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw5" src="images/1/image5.jpeg" class="img5" alt="image5" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw6" src="images/1/image6.jpeg" class="img6" alt="image6" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw7" src="images/1/image7.jpeg" class="img7" alt="image7" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw8" src="images/1/image8.jpeg" class="img8" alt="image8" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw9" src="images/1/image9.jpeg" class="img9" alt="image9" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw10" src="images/1/image10.jpeg" class="img10" alt="image10" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw11" src="images/1/image11.jpeg" class="img11" alt="image11" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw12" src="images/1/image12.jpeg" class="img12" alt="image12" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw13" src="images/1/image13.jpeg" class="img13" alt="image13" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw14" src="images/1/image14.jpeg" class="img14" alt="image14" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw15" src="images/1/image15.jpeg" class="img15" alt="image15" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+          <img id="jigsaw16" src="images/1/image16.jpeg" class="img16" alt="image16" width="200" height="200" draggable="true" ondragstart="drag(event)" ondrop="drop(event)" ondragover="allowDrop(event)">
+      </div>
+
+     <p class="jigsaw-container">container:</p>
+
+     <div class="image-jigsaw">
+          <img src="none.jpeg" id="image1" class="container1" alt="image1" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image2" class="container2" alt="image2" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image3" class="container3" alt="image3" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image4" class="container4" alt="image4" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image5" c class="container5" alt="image5" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image6" c class="container6" alt="image6" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image7" c class="container7" alt="image7" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image8" c class="container8" alt="image8" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image9" c class="container9" alt="image9" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image10" c class="container10" alt="image10" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image11" c class="container11" alt="image11" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image12" c class="container12" alt="image12" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image13" c class="container13" alt="image13" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image14" c class="container14" alt="image14" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image15" c class="container15" alt="image15" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+          <img src="none.jpeg" id="image16" c class="container16" alt="image16" width="200" height="200" ondrop="drop(event)" ondragover="allowDrop(event)" draggable="true" ondragstart="drag(event)">
+     </div>
+</div>
+
+     <p> </p>
+
+      <audio id="audio" controls autoplay loop>
+      <source src="music.mp3" type="audio/mpeg">
+      </audio>
+
+      <button id="reset" >reset</button>
+      <script src="js/jigsaw.js"></script>
+
+</body>
+</html>
