@@ -6,7 +6,15 @@ var timecount=setInterval(function(){
   if(num==120){
       alert("Times up. Game over!");
       reset();
+      pause();
 }},1000);
+
+var a = document.getElementById("audio");
+
+function pause()
+  {
+  a.pause();
+  }
 
 /*
 var images = document.querySelectorAll('.image, .img1, .img2');
