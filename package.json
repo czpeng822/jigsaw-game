@@ -4,8 +4,8 @@
   "description": "jigsaw",
   "main": "js/title.js",
   "scripts": {
-  "start": "node js/jigsaw.js"
-  ,
+    "start": "node js/jigsaw.js"
+  },
   "author": "czp",
   "license": "none"
 }
