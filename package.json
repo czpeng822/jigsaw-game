@@ -2,10 +2,10 @@
   "name": "jigsaw_game",
   "version": "1.0.0",
   "description": "jigsaw",
-  "main": "index.html",
+  "main": "js/title.js",
   "scripts": {
-    "start": "js\title.js"
-  },
+  "start": "node js/jigsaw.js"
+  ,
   "author": "czp",
   "license": "none"
 }
