@@ -1,12 +1,11 @@
 {
-  "name": "jigsaw_game",        // 项目名称
-  "version": "1.0.0",             // 版本号
-  "description": "jigsaw",  // 项目描述
-  "main": "\js\jigsaw.js",             // 入口文件
-  "scripts": {                    // 自定义脚本命令
-    "start": "\js\title.js"     // 启动命令
+  "name": "jigsaw_game",       
+  "version": "1.0.0",          
+  "description": "jigsaw",  
+  "main": "./js/jigsaw.js",
+  "scripts": {                  
+    "start": "node ./js/title.js"
   },
-  "author": "czp",          // 作者
-  "license": "none"               // 许可证
-  }
+  "author": "czp",          
+  "license": "none"              
 }
