@@ -1,0 +1,24 @@
+
+body {
+	  background-image: url('../images/title.jpeg');
+	}
+
+
+h1   {color: lightblue;
+	    font-size: 6rem;
+	    text-align: center;   /* 水平居中 */
+			text-shadow: blue 1px 1px 20px;
+			margin-top: 100px;
+			font-style: italic;
+      }
+
+
+.botton1 {
+			    margin-top: 400px;
+					display: flex; /* 使用 Flex 布局 */
+	        justify-content: center; /* 水平居中子元素 */
+  		}
+
+.audio1 {
+			    margin-top: 380px;
+			}
