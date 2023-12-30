@@ -1,5 +1,5 @@
 //difeine Timer
-var num=0;
+var num=1;
 var timecount=setInterval(function(){
   document.getElementById('timer').innerText=num++;
     //game over
@@ -27,15 +27,13 @@ var images = document.querySelectorAll('.image, .img1, .img2');
     });
 */
 
-
-
 //define hint
 function hint(){
   var image = document.querySelector('.image');
   image.style.display = 'block';
   setTimeout(function () {
       image.style.display = 'none';
-  }, 1000);
+  }, 2000);
 }
 let hint_btn=document.getElementById("hint");
 hint_btn.onclick=hint;
@@ -97,7 +95,7 @@ function drop(ev)
     ev.target.height = document.getElementById(data).height;
     document.getElementById(data).src="none.jpeg";
     setTimeout(function() {
-    check();}, 500);
+    check();}, 50);
 }}
 
 //check the game is over
